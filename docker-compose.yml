@@ -35,6 +35,8 @@ services:
       - vproappdata:/usr/local/tomcat/webapps
 
   vproweb:
+    build:
+      context: ./Docker-files/web
     image: vprocontainers/vprofileweb
     ports:
       - "80:80"
